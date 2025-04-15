@@ -17,6 +17,7 @@ private:
 public:
     LinkedList();
     int size();
+    bool empty();
 };
 LinkedList::LinkedList(){
     head = tail = nullptr;
@@ -24,6 +25,9 @@ LinkedList::LinkedList(){
 }
 int LinkedList::size(){
     return n;
+}
+bool LinkedList::empty(){
+    return size() == 0;
 }
 
 
