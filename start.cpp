@@ -22,6 +22,9 @@ LinkedList::LinkedList(){
     head = tail = nullptr;
     n = 0;
 }
+int LinkedList::size(){
+    return n;
+}
 
 
 class Node{
